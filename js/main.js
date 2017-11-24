@@ -12,12 +12,18 @@
         miniModel.firstChild.nodeValue=carIndex.headline;
         miniPrice.firstChild.nodeValue=carIndex.carprice;
         miniDetail.firstChild.nodeValue=carIndex.text;
-        //theImages.classList.add('')
+        theImages.forEach(function(element, index){
+          element.classList.add('nonActive');
+        })
+
+      this.classList.remove('nonActive');
+
         }
         theImages.forEach(function(element, index){
           element.addEventListener('click',changeElements,false);
 
         })
+
 
 
 })();
